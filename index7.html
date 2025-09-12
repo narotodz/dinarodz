@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="ar"><head><meta charset="UTF-8"><title>الدفع عبر BaridiMob / CCP | Dinaro Tools</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body{margin:0;font-family:"Segoe UI",sans-serif;background:linear-gradient(135deg,#101820,#1a332a);color:#fff;overflow-x:hidden}
+nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,.6);padding:12px;text-align:center;z-index:100}
+nav a{margin:0 15px;color:#0f8;text-decoration:none;font-weight:bold;font-size:18px;transition:.3s}
+nav a:hover{color:#fff;text-shadow:0 0 10px #0f8}
+header{padding:120px 20px 50px;text-align:center}
+header h1{font-size:45px;color:#0f8;margin-bottom:20px}
+header p{font-size:20px;color:#ddd;max-width:800px;margin:auto}
+/* --- معلومات الدفع --- */
+.container{max-width:800px;margin:40px auto;padding:30px;background:rgba(255,255,255,.05);border-radius:15px;box-shadow:0 0 12px rgba(0,255,136,.2)}
+.payment{display:flex;align-items:center;justify-content:space-between;padding:15px;border-bottom:1px solid rgba(255,255,255,.1)}
+.payment:last-child{border:none}
+.payment i{color:#0f8;font-size:22px;margin-right:10px}
+.payment span{font-size:20px;color:#fff;direction:ltr}
+.copy-btn{background:none;border:none;color:#0f8;font-size:20px;cursor:pointer;transition:.3s}
+.copy-btn:hover{color:#fff;text-shadow:0 0 8px #0f8}
+.note{margin-top:25px;text-align:center;color:#ccc;font-size:18px}
+</style></head><body>
+<nav>
+  <a href="index.html">الرئيسية</a>
+  <a href="index2.html">من نحن</a>
+  <a href="index3.html">طرق الدفع</a>
+  <a href="index4.html">تحميل</a>
+  <a href="index5.html">الدعم</a>
+  <a href="index6.html">أسعار الباقات</a>
+  <a href="index7.html">BaridiMob / CCP</a>
+</nav>
+
+<header>
+  <h1>💳 الدفع عبر BaridiMob / CCP</h1>
+  <p>يمكنك الدفع بسهولة عبر BaridiMob أو CCP. انسخ البيانات أدناه وأرسل إيصال الدفع إلى الدعم.</p>
+</header>
+
+<div class="container">
+  <div class="payment">
+    <div><i class="fa-solid fa-building-columns"></i> <strong>BaridiMob:</strong></div>
+    <span id="baridimob">00799999004385331309</span>
+    <button class="copy-btn" onclick="copyText('baridimob')"><i class="fa-solid fa-scissors"></i></button>
+  </div>
+
+  <div class="payment">
+    <div><i class="fa-solid fa-building-columns"></i> <strong>CCP:</strong></div>
+    <span id="ccp">43853313</span>
+    <button class="copy-btn" onclick="copyText('ccp')"><i class="fa-solid fa-scissors"></i></button>
+  </div>
+
+  <div class="payment">
+    <div><i class="fa-solid fa-user"></i> <strong>Clé:</strong></div>
+    <span id="cle">09</span>
+    <button class="copy-btn" onclick="copyText('cle')"><i class="fa-solid fa-scissors"></i></button>
+  </div>
+
+  <div class="payment">
+    <div><i class="fa-solid fa-id-card"></i> <strong>الإسم:</strong></div>
+    <span id="name">KENDL AHMED</span>
+    <button class="copy-btn" onclick="copyText('name')"><i class="fa-solid fa-scissors"></i></button>
+  </div>
+</div>
+
+<div class="note">📌 ملاحظة: بعد الدفع، تواصل مع الدعم على <a href="https://t.me/dinaro_officiel" style="color:#0f8;text-decoration:none">Telegram</a> لتأكيد العملية.</div>
+
+<script>
+function copyText(id){
+  const text=document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    alert("تم نسخ: " + text);
+  });
+}
+</script>
+</body></html>

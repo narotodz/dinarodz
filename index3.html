@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="ar"><head><meta charset="UTF-8"><title>طرق الدفع</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body{margin:0;font-family:"Segoe UI",sans-serif;background:#0d1f0d;color:#fff;direction:rtl;text-align:center}
+nav{background:#000a;padding:10px;position:fixed;top:0;width:100%;z-index:1000}
+nav a{margin:0 10px;color:#0f8;text-decoration:none;font-weight:bold}
+nav a:hover{color:#fff;text-shadow:0 0 8px #0f8}
+section{padding:80px 20px}
+.payment-box{max-width:700px;margin:20px auto;background:#111;padding:15px;border-radius:8px}
+.payment{display:flex;justify-content:space-between;align-items:center;padding:6px;border-bottom:1px solid #222}
+.payment:last-child{border:none}.copy-btn{background:none;border:none;color:#0f8;cursor:pointer}
+.copy-btn:hover{color:#fff}
+.qr{margin:20px auto}
+.qr img{width:220px;border:4px solid #0f8;border-radius:12px}
+.plan{max-width:260px;margin:30px auto;background:#111;padding:20px;border-radius:10px;transition:.3s}
+.plan:hover{transform:translateY(-5px);box-shadow:0 0 10px #0f8}
+.plan h3{color:#0f8;margin:10px 0}.price{font-size:22px;font-weight:bold;color:#0f8;margin:10px 0}
+</style></head><body>
+<nav>
+ <a href="index.html">الرئيسية</a><a href="index2.html">من نحن</a><a href="index3.html">طرق الدفع</a>
+ <a href="index4.html">تحميل</a><a href="index5.html">الدعم</a>
+</nav>
+
+<section>
+  <h2>💳 طرق الدفع</h2>
+  <div class="payment-box">
+    <div class="payment"><div><i class="fa-brands fa-btc"></i> بيتكوين</div>
+      <span id="btc">19GZaakrh3prd7Vj6U2g1LfP943zvvHymF</span>
+      <button class="copy-btn" onclick="copyText('btc')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-brands fa-ethereum"></i> ERC20</div>
+      <span id="erc20">0x53247Fe61B3Ed9Dcf0E8732934aE3F92485Ca1ea</span>
+      <button class="copy-btn" onclick="copyText('erc20')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-solid fa-link"></i> TRC20</div>
+      <span id="trc20">TCLRxa9xaAbe2QqigXpkoPxvVXW7eso3hE</span>
+      <button class="copy-btn" onclick="copyText('trc20')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-solid fa-coins"></i> BEP20</div>
+      <span id="bep20">0x53247Fe61B3Ed9Dcf0E8732934aE3F92485Ca1ea</span>
+      <button class="copy-btn" onclick="copyText('bep20')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="qr"><img src="https://i.postimg.cc/mkThm60d/IMG-0119.jpg" alt="QR Code"></div>
+    <div class="payment"><div><i class="fa-brands fa-cc-visa"></i> Binance Pay</div>
+      <span id="binance">1131787436</span>
+      <button class="copy-btn" onclick="copyText('binance')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-solid fa-credit-card"></i> RedotPay</div>
+      <span id="redot">1436519085</span>
+      <button class="copy-btn" onclick="copyText('redot')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-solid fa-building-columns"></i> BaridiMob</div>
+      <span id="baridimob">00799999004385331309</span>
+      <button class="copy-btn" onclick="copyText('baridimob')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+    <div class="payment"><div><i class="fa-solid fa-building-columns"></i> CCP</div>
+      <span id="ccp">43853313 | Clé:09 | KENDL AHMED</span>
+      <button class="copy-btn" onclick="copyText('ccp')"><i class="fa-solid fa-scissors"></i></button>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>📦 أسعار الباقات</h2>
+  <div class="plan">
+    <i class="fa-solid fa-plane fa-2x"></i>
+    <h3>باقة كراش</h3>
+    <div class="price">50$</div>
+    <div>مدة 7 أيام</div>
+  </div>
+  <div class="plan">
+    <i class="fa-solid fa-apple-whole fa-2x"></i>
+    <h3>باقة التفاحة</h3>
+    <div class="price">40$</div>
+    <div>مدة 7 أيام</div>
+  </div>
+</section>
+
+<script>
+function copyText(id){navigator.clipboard.writeText(document‏getElementById(id).innerText).then(()=>alert("تم النسخ ✅"));}
+‏</script>
+‏</body></html>
